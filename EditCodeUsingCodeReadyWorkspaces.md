@@ -34,7 +34,7 @@ Let us create a new Workspace.
 ![](./images/2.CodeReady.png)
 * Create on the `Create and Open` button. This will start launching a new workspace.
 
-![](./images/3.CodeReady.png)
+![](./images/3.CodeReady.png =100x)
 
 Workspace launch will take a few mins as it has to download the container image, create a new workspace pod, download project code and dependencies, and bring up the IDE within the workspace. If you have access to the workspace project in the OpenShift cluster, you can also watch the coming up of the new workspace pod. Once the workspace is up, you will see the editor as shown below. Familiarize yourself with the interface and the menu options. Also note that the code is cloned from GitRepo and is available in the editor. 
 

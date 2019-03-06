@@ -11,6 +11,6 @@
 
 * [Using Launcher to generate code](GenerateCodeUsingLauncher.md)
 * [Editing code using CodeReady workspaces ](EditCodeUsingCodeReadyWorkspaces.md)
-* Debugging code using CodeReady workspaces
+* [Debugging code using CodeReady workspaces](DebuggingUsingCodeReadyWorkspaces.md)
 * Creating Factories 
 
