@@ -7,13 +7,14 @@ We will use Launcher to generate code for our microservice.
 
 * You either have OpenShift Online Pro account or an OpenShift cluster of your own. The Launcher can be used in [http://developers.redhat.com/launch](http://developers.redhat.com/launch) by signing in with Red Hat Developers Account with OpenShift Online Pro and GitHub Accounts.
 
-* If using your own OpenShift cluster, you have deployed Launcher as discussed [here](). Your Git Repo has been configured with the Launcher
+* If using your own OpenShift cluster, you have deployed Launcher as discussed [here](). Your credentials are configured with the Keycloak server and Git Repo has been configured to work with the Launcher via Keycloak.
 
 
 ### Invoke Launcher 
 
-First invoke Launcher in the browser. You'll see the options to launch a project. 
-![](./images/1.Launcher.png)
+First invoke Launcher in the browser. 
+
+![](./images/11.Launcher.png)
 
 Choose `Launch Your Project` button.
 
@@ -28,6 +29,20 @@ Launcher provides two options for the generated codebase:
 The first option automatically deploys code onto an OpenShift cluster. The second option allows you to download the code as ZIP file, build and deploy it yourself.
 
 For this example let us choose to Build and Deploy to OpenShift. 
+
+If you are using Launcher for the first time, you will have to login to the OpenShift cluster by clicking on the `Authorize` button
+
+![](./images/12.Launcher.png)
+
+You'll see the OpenShift login screen where you can enter your OpenShift Credentials to login to the cluster. 
+
+![](./images/13.Launcher.png)
+
+Click on `Allow selected permissions` button to allow keycloak-client to access your account.
+
+![](./images/14.Launcher.png)
+
+Now the control will be back to the launcher with target environment set to your OpenShift cluster. The above steps are not needed the next time you use the launcher. Now select `Build and Deploy Online` option and continue.
 
 ![](./images/2.Launcher.png)
 
@@ -66,7 +81,24 @@ For this example, let us choose `Relational Persistence`
 
 ### Choose Git Repository Details
 
-You can now choose the repository to create on the Git that you would have configured while the Launcher was configured for your user account. A repository name is randomly created for you. But you change it to what you want to call the repo.
+You can now name the repository that will be created on Git Repo. But first you will have to Login to your Git account. Click on `Login & Authorize Account`
+
+![](./images/15.Launcher.png)
+
+Based on the OAuth client configured in Git, it will prompt you to log into your git repository. Enter your credentials to sign into your git repo.
+
+![](./images/16.Launcher.png)
+
+Once logged into the Git repo, authorize the launcher to access your git repository to add code.
+
+![](./images/17.Launcher.png)
+
+The above steps are to be performed only the first time. Once done, from next time Launcher remembers your git info and takes you directly to the next screen.
+
+A repository name is randomly created for you. But you change it to what you want to call the repo.
+
+**Note** If you are accessing your 
+
 ![](./images/7.Launcher.png)
 
 ### Application Summary

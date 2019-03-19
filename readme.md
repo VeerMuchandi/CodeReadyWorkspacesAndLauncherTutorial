@@ -4,8 +4,8 @@
 
 ### Installation
 
-* [Install Launcher on OpenShift Cluster](InstallLauncherOnOpenShift.md)
 * [Install CodeReady Workspaces on OpenShift Cluster](InstallingCodeReadyWorkspacesOnOpenShift.md)
+* [Install Launcher on OpenShift Cluster](InstallLauncherOnOpenShift.md)
 
 ### Labs
 
