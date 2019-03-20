@@ -24,7 +24,7 @@ oc process --local -f $BASE/openshift/launcher-template.yaml \
     LAUNCHER_KEYCLOAK_URL=$KEYCLOAK_URL/auth \
     LAUNCHER_KEYCLOAK_REALM=$KEYCLOAK_REALM \
     LAUNCHER_KEYCLOAK_CLIENT_ID=$KEYCLOAK_CLIENT_ID \
-    LAUNCHER_MISSIONCONTROL_OPENSHIFT_CONSOLE_URL=https://$(oc config current-context| cut -d/ -f2) \
+    LAUNCHER_MISSIONCONTROL_OPENSHIFT_CONSOLE_URL=$(oc status | grep "on server" | sed 's/.*on server //') \
    $PARAMS -o yaml | oc create -f -
 
 echo Enabling Launcher Creator
